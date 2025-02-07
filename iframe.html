@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test n8n Chat Widget</title>
+    <title>n8n chat widget test</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>n8n Chat Widget</h1>
-    <!--     <iframe src="iFrame.html" frameborder="1" height="500" width="700"></iframe> -->
-
+    <h1>n8n Chat Widget iframe</h1>
     <script type="module">
       import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
       createChat({
@@ -22,13 +24,12 @@
         mode: "fullscreen",
         chatInputKey: "chatInput",
         chatSessionKey: "sessionId",
-        loadPreviousSession: false,
         metadata: {},
         showWelcomeScreen: true,
         defaultLanguage: "en",
         initialMessages: [
           "Hi there! 👋",
-          "My name is Ria. How can I assist you today?",
+          "My name is Nathan. How can I assist you today?",
         ],
         i18n: {
           en: {
