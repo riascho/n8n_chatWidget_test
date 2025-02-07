@@ -23,7 +23,7 @@
         mode: "fullscreen",
         chatInputKey: "chatInput",
         chatSessionKey: "sessionId",
-        loadPreviousSession: false,
+        loadPreviousSession: true, // will send POST request each time page is loaded!
         metadata: {},
         showWelcomeScreen: true,
         defaultLanguage: "en",
@@ -33,11 +33,11 @@
         ],
         i18n: {
           en: {
-            title: "Ask me",
-            subtitle: ".",
-            footer: "Footer ext",
+            title: "Hi there! 👋",
+            subtitle: "Start a chat. We're here to help you 24/7.",
+            footer: "made with 🩷 by n8n",
             getStarted: "New Conversation",
-            inputPlaceholder: "Tippen Sie hier Ihre Frage ein…",
+            inputPlaceholder: "Type your question..",
           },
         },
       });
